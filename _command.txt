@@ -1,0 +1,22 @@
+Build frontend assets (this is not a "forever" running command):
+$ npm run build
+Start listening to the Laravel events:
+$ php artisan queue:listen
+Start the WebSocket server:
+$ php artisan reverb:start
+Start the server (you may use an alternative for your app like a local running server):
+$ php artisan serve
+
+
+
+แก้ไข .evn
+
+# REVERB_HOST="localhost"
+# REVERB_PORT=8080
+# REVERB_SCHEME=http
+
+ให้เป็นโดเมนสำหรับ production
+
+REVERB_HOST="linux-reverb.bomboonsan.com"
+REVERB_PORT=443
+REVERB_SCHEME=https
